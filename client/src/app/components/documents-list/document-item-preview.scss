@@ -1,0 +1,20 @@
+.preview {
+	position: relative;
+	height: 250px;
+	width: inherit;
+
+	object {
+		display: block;
+		height: inherit;
+		width: inherit;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: 0px;
+		height: 78px;
+		width: 100%;
+		background: transparent -moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.02));
+		content: " ";
+	}
+}

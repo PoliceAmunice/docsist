@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  web:
+    build: ./client
+    ports:
+      - 3030:${PORT}
+    environment:
+      - APP_ENV
+      - PORT
+      - USE_DOCKER
+    volumes:
+      - ./client:/client
+    working_dir: /client

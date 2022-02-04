@@ -1,0 +1,42 @@
+{
+	"compilerOptions": {
+		// Compiles
+		"target": "ES5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"lib": [
+			"DOM",
+			"ES5"
+		],
+		"noEmit": true,
+		"sourceMap": true,
+		"jsx": "react-jsx",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		// Strictness
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		// Lint
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noPropertyAccessFromIndexSignature": true,
+		//	Aliases
+		"baseUrl": "./",
+		"paths": {
+			"App/*": ["src/app/*"],
+			"Assets/*": ["src/assets/*"],
+			"Styles/*": ["src/scss/*"],
+			"Utils/*": ["src/utils/*"]
+	  	},
+	},
+	"include": [
+		"./src"
+	],
+	"exclude": [
+		"./src/assets",
+		"./src/scss",
+	]
+}

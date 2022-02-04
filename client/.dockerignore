@@ -1,0 +1,7 @@
+*
+!src
+!config
+!webpack.config.js
+!*.json
+!.env.*
+!*.lock
